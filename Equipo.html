@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Equipo · Despacho Futurista</title>
+  <meta name="description" content="Nuestro equipo legal: 12 abogados, sus especialidades y experiencia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#000000;--bg2:#001a1a;--bg3:#003333;
+      --ink:#e0ffff;--glass:rgba(0,255,255,.06);--stroke:rgba(0,255,255,.12);
+      --cy:#00ffff;--mag:#00cccc;--muted:#a0f0f0
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%}
+    body{
+      background:var(--bg1);
+      color:var(--ink);
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;
+    }
+    header{max-width:1200px;margin:0 auto;padding:40px 20px 10px}
+    header h1{
+      font-family:Orbitron,Inter,sans-serif;
+      font-size:clamp(28px,3vw,44px);
+      letter-spacing:.04em;margin:0 0 10px;
+      color:var(--cy);
+      text-shadow:0 0 18px rgba(0,255,255,.5)
+    }
+    header p{margin:0;color:var(--muted)}
+    .equipo-container{display:flex;flex-wrap:wrap;gap:28px;justify-content:center;max-width:1200px;margin:20px auto 80px;padding:0 20px}
+    .card-equipo{position:relative;width:min(280px,92vw);padding:16px;border-radius:16px;background:var(--glass);border:1px solid var(--stroke);box-shadow:0 0 0 1px rgba(0,255,255,.05),0 12px 24px rgba(0,0,0,.35);backdrop-filter:saturate(140%) blur(10px);transition:transform .35s ease, box-shadow .35s ease}
+    .card-equipo:hover{transform:translateY(-10px) scale(1.02);box-shadow:0 0 0 1px rgba(0,255,255,.15),0 18px 36px rgba(0,0,0,.5)}
+    .card-equipo img{width:100%;height:160px;object-fit:cover;border-radius:12px;margin-bottom:10px}
+    .card-equipo h3{font-family:Orbitron,Inter,sans-serif;font-size:1.05rem;margin:6px 0;color:var(--cy)}
+    .meta{margin:6px 0 8px}
+    .meta b{color:var(--mag)}
+    .desc{font-size:.92rem;line-height:1.55;color:var(--muted)}
+    .asimetrico:nth-child(3n+1){transform:translateY(-8px)}
+    .asimetrico:nth-child(3n+2){transform:translateY(14px)}
+    .asimetrico:nth-child(3n){transform:translateY(-4px)}
+    .whatsapp-float{position:fixed;right:18px;bottom:18px;width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:#25d366;box-shadow:0 10px 24px rgba(0,0,0,.35),0 0 22px rgba(37,211,102,.45);z-index:50}
+    .whatsapp-float img{width:36px;height:36px}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nuestro Equipo</h1>
+    <p>Conoce a nuestro grupo de especialistas: 12 abogados con experiencia multidisciplinaria y enfoque estratégico.</p>
+  </header>
+  <main class="equipo-container">
+    <div class="card-equipo asimetrico"><img src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d" alt="Ana Torres"><h3>Ana Torres</h3><p class="meta"><b>Especialidad:</b> Derecho Corporativo</p><p class="desc">Experta en reestructuración empresarial y expansión global.</p></div>
+    <div class="card-equipo asimetrico"><img src="https://images.unsplash.com/photo-1556157382-97eda2d62296" alt="Luis Hernández"><h3>Luis Hernández</h3><p class="meta"><b>Especialidad:</b> Litigio Civil y Mercantil</p><p class="desc">Defensor con casos emblemáticos ganados en tribunales.</p></div>
+    <div class="card-equipo asimetrico"><img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6" alt="Marta Ríos"><h3>Marta Ríos</h3><p class="meta"><b>Especialidad:</b> Propiedad Intelectual</p><p class="desc">Especialista en innovación y protección de activos intangibles.</p></div>
+    <div class="card-equipo asimetrico"><img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Jorge Castillo"><h3>Jorge Castillo</h3><p class="meta"><b>Especialidad:</b> Derecho Penal</p><p class="desc">Experto en casos complejos de alto perfil.</p></div>
+    <div class="card-equipo asimetrico"><img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe" alt="Isabel Romero"><h3>Isabel Romero</h3><p class="meta"><b>Especialidad:</b> Derecho Laboral</p><p class="desc">Reconocida por reformas laborales y defensa de trabajadores.</p></div>
+    <div class="card-equipo asimetrico"><img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c" alt="Andrés Méndez"><h3>Andrés Méndez</h3><p class="meta"><b>Especialidad:</b> Derecho Fiscal</p><p class="desc">Experto en optimización fiscal y defensa tributaria.</p></div>
+    <div class="card-equipo asimetrico"><img src="https://images.unsplash.com/photo-1520813792240-56fc4a3765a7" alt="Fernanda López"><h3>Fernanda López</h3><p class="meta"><b>Especialidad:</b> Derecho Ambiental</p><p class="desc">Asesora en cumplimiento ambiental y energías limpias.</p></div>
+    <div class="card-equipo asimetrico"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" alt="Ricardo Vargas"><h3>Ricardo Vargas</h3><p class="meta"><b>Especialidad:</b> Derecho Inmobiliario</p><p class="desc">Amplia experiencia en desarrollos y financiamiento de proyectos.</p></div>
+    <div class="card-equipo asimetrico"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce" alt="Camila Pérez"><h3>Camila Pérez</h3><p class="meta"><b>Especialidad:</b> Derecho de Familia</p><p class="desc">Gestión de procesos complejos de custodia y herencia.</p></div>
+    <div class="card-equipo asimetrico"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="Sofía Herrera"><h3>Sofía Herrera</h3><p class="meta"><b>Especialidad:</b> Derecho Internacional</p><p class="desc">Colabora en operaciones y tratados internacionales.</p></div>
+    <div class="card-equipo asimetrico"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1" alt="Daniel Ruiz"><h3>Daniel Ruiz</h3><p class="meta"><b>Especialidad:</b> Arbitraje Comercial</p><p class="desc">Mediador en conflictos empresariales de alto valor.</p></div>
+    <div class="card-equipo asimetrico"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e" alt="Laura Martínez"><h3>Laura Martínez</h3><p class="meta"><b>Especialidad:</b> Derecho Tecnológico</p><p class="desc">Especialista en ciberseguridad y legislación digital.</p></div>
+  </main>
+  <a href="https://wa.me/521234567890" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
+</body>
+</html>
+
+
+
+

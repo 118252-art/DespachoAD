@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LexNova · Despacho de Abogados</title>
+  <meta name="description" content="Despacho de abogados especializado en derecho corporativo, litigio y consultoría legal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Merriweather', serif;
+      color: #f5f5f5;
+      background-color: #000000;
+      line-height: 1.6;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #111;
+      border-bottom: 2px solid #444;
+      padding: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #f5f5f5;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #1e90ff;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #111;
+    }
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.5em;
+    }
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    section h2 {
+      border-bottom: 2px solid #1e90ff;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      border: 1px solid #333;
+      border-radius: 8px;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    form input, form textarea, form select, form button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #444;
+      border-radius: 4px;
+      font-family: inherit;
+      background: #111;
+      color: #f5f5f5;
+    }
+    form button {
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #006ad1;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      border-top: 2px solid #444;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><strong>LexNova</strong></div>
+    <div>
+        <a href="index.html">Menu</a>
+      <a href="Nuestra firma.html">Nuestra firma</a>
+      <a href="Equipo.html">Nuestro equipo</a>
+      <a href="Servicios.html">Servicios</a>
+      <a href="Contacto.html">Contacto</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>LexNova · Despacho de Abogados</h1>
+    <p>Defendemos sus intereses con integridad, experiencia y compromiso.</p>
+  </header>
+
+  <section id="firma">
+    <h2>Nuestra firma</h2>
+    <p>En LexNova, brindamos asesoría jurídica de alta calidad, basada en la ética, la responsabilidad y la excelencia profesional. Nuestro equipo se especializa en atender tanto a empresas como a particulares en diversas áreas del derecho.</p>
+  </section>
+
+  <section id="equipo">
+    <h2>Nuestro equipo</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d" alt="Abogada Ana Torres">
+        <h3>Dra. Ana Torres</h3>
+        <p>Especialista en Derecho Corporativo y Compliance.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296" alt="Abogado Luis Hernández">
+        <h3>Mtro. Luis Hernández</h3>
+        <p>Experto en Litigio Civil y Mercantil.</p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <footer>
+    © <span id="y"></span> LexNova · Todos los derechos reservados
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Servicios · Despacho Futurista</title>
+  <meta name="description" content="Descubre los servicios legales que ofrece nuestro despacho futurista." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      color: #1e90ff;
+      --bg1:#000000;--ink:#ffffff;--cy:#e9f1f1;--muted:#;--glass:rgba(0,255,255,0.05);--stroke:rgba(0,255,255,0.15);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      background:var(--bg1);
+      color:var(--ink);
+      font-family:Inter, sans-serif;
+      line-height:1.6;
+    }
+    header{
+      text-align:center;
+      padding:40px 20px 20px;
+    }
+    header h1{
+      font-family:Orbitron, sans-serif;
+      font-size:clamp(28px,3vw,42px);
+      color:var(--cy);
+      text-shadow:0 0 18px rgba(0,255,255,.5);
+      margin-bottom:10px;
+    }
+    header p{
+      color:var(--muted);
+      max-width:800px;
+      margin:0 auto;
+    }
+    .servicios-container{
+      max-width:1100px;
+      margin:40px auto;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+    .card-servicio{
+      background:var(--glass);
+      border:1px solid var(--stroke);
+      border-radius:14px;
+      padding:20px;
+      backdrop-filter:blur(10px);
+      transition:transform .3s, box-shadow .3s;
+    }
+    .card-servicio:hover{
+      transform:translateY(-5px);
+      box-shadow:0 0 20px rgba(0,255,255,.3);
+    }
+    .card-servicio h3{
+      font-family:Orbitron, sans-serif;
+      color:var(--cy);
+      margin-bottom:10px;
+    }
+    .card-servicio p{
+      color:var(--muted);
+      font-size:0.95rem;
+    }
+    .whatsapp-float{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      width:64px;
+      height:64px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      background:#25d366;
+      box-shadow:0 10px 24px rgba(0,0,0,.35),0 0 22px rgba(37,211,102,.45);
+      z-index:50;
+    }
+    .whatsapp-float img{
+      width:36px;
+      height:36px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Servicios</h1>
+    <p>Ofrecemos soluciones legales integrales con un enfoque innovador y futurista para empresas y particulares.</p>
+  </header>
+  <main class="servicios-container">
+    <div class="card-servicio">
+      <h3>Derecho Corporativo</h3>
+      <p>Asesoría en constitución de empresas, fusiones, adquisiciones y cumplimiento regulatorio.</p>
+    </div>
+    <div class="card-servicio">
+      <h3>Litigio Civil y Mercantil</h3>
+      <p>Defensa y representación en conflictos comerciales y civiles de alto impacto.</p>
+    </div>
+    <div class="card-servicio">
+      <h3>Propiedad Intelectual</h3>
+      <p>Registro y protección de marcas, patentes, derechos de autor y activos intangibles.</p>
+    </div>
+    <div class="card-servicio">
+      <h3>Derecho Penal Corporativo</h3>
+      <p>Defensa en casos de delitos económicos y asesoría en compliance penal.</p>
+    </div>
+    <div class="card-servicio">
+      <h3>Derecho Laboral</h3>
+      <p>Negociación colectiva, mediación y prevención de conflictos laborales.</p>
+    </div>
+    <div class="card-servicio">
+      <h3>Derecho Fiscal</h3>
+      <p>Planeación tributaria, auditorías y defensa ante autoridades fiscales.</p>
+    </div>
+    <div class="card-servicio">
+      <h3>Derecho Ambiental</h3>
+      <p>Asesoría en regulación ambiental y proyectos sostenibles.</p>
+    </div>
+    <div class="card-servicio">
+      <h3>Derecho Inmobiliario</h3>
+      <p>Contratos, financiamiento y resolución de disputas en bienes raíces.</p>
+    </div>
+    <div class="card-servicio">
+      <h3>Derecho Internacional</h3>
+      <p>Arbitraje, comercio exterior y tratados internacionales.</p>
+    </div>
+  </main>
+  <a href="https://wa.me/521234567890" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
+</body>
+</html>

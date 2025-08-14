@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LexNova · Nuestra Firma </title>
+  <style>
+    :root{
+      --bg:#000;--card:#111;--ink:#fff;--border:#222;--accent:rgb(16, 38, 208);--muted:#ccc;
+    }
+    *{box-sizing:border-box}
+    body { margin: 0; font-family: Arial, sans-serif; background-color: var(--bg); color: var(--ink);}    
+    section { max-width: 1200px; margin: auto; padding: 40px 20px;}
+    h2 { border-bottom: 2px solid var(--accent); padding-bottom: 10px; margin-bottom: 20px;}
+    p { line-height: 1.7; }
+    .muted{color:var(--muted)}
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .subgrid{ display:grid; grid-template-columns: 1fr; gap:12px }
+    .grid img { width: 100%; border-radius: 10px; }
+    .card { background-color: var(--card); padding: 20px; border-radius: 10px; border: 1px solid var(--border); }
+    .card h3 { margin: 0 0 8px; color: var(--accent); }
+    .badge{ display:inline-block; padding:6px 10px; border:1px solid #1f1f1f; border-radius:999px; background:#0a0a0a; font-size:.85rem; margin:4px 6px 0 0 }
+    .stats{ display:grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin-top:16px }
+    .stat{ background:#0b0b0b; border:1px solid #1f1f1f; padding:16px; border-radius:12px; text-align:center }
+    .stat .n{ font-size:1.6rem; color:var(--accent); font-weight:700 }
+    .list{ margin:12px 0 0 0; padding-left:18px }
+    .list li{ margin:6px 0 }
+
+    /* Equipo (ya existente) */
+    .card-equipo{ background-color: var(--card); padding: 20px; border-radius: 10px; border: 1px solid var(--border);}    
+    .card-equipo h3{ margin:10px 0 5px; color: var(--accent);}
+
+    /* WhatsApp flotante */
+    .whatsapp-float { position: fixed; width: 60px; height: 60px; bottom: 20px; right: 20px; z-index: 100; }
+    .whatsapp-float img { width: 100%; height: 100%; border-radius: 50%; box-shadow: 2px 2px 3px rgba(0,0,0,0.3); transition: transform 0.2s ease; }
+    .whatsapp-float img:hover { transform: scale(1.1); }
+  </style>
+</head>
+<body>
+  <!-- NUESTRA FIRMA -->
+  <section id="firma">
+    <h2>Nuestra Firma</h2>
+    <div class="grid">
+      <div class="subgrid">
+        <p class="muted"><strong>LexNova</strong> es un despacho boutique con enfoque futurista que combina estrategia jurídica, datos y tecnología para resolver asuntos corporativos, litigios complejos y proyectos de alto impacto. Trabajamos cerca de la dirección y los equipos internos para alinear soluciones legales con objetivos de negocio.</p>
+        <div class="card">
+          <h3>¿Qué nos distingue?</h3>
+          <ul class="list">
+            <li><strong>Visión estratégica:</strong> asesoría orientada a resultados medibles.</li>
+            <li><strong>Innovación:</strong> automatización documental, IA para revisión y due diligence.</li>
+            <li><strong>Transparencia:</strong> reportes claros, cronogramas y presupuestos predecibles.</li>
+            <li><strong>Defensa sólida:</strong> litigio y arbitraje con metodología probada.</li>
+          </ul>
+          <div style="margin-top:10px">
+            <span class="badge">Gobierno corporativo</span>
+            <span class="badge">M&A</span>
+            <span class="badge">Compliance</span>
+            <span class="badge">Datos & Privacidad</span>
+            <span class="badge">Litigio estratégico</span>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="n">15+ años</div><div>de experiencia combinada</div></div>
+          <div class="stat"><div class="n">200+</div><div>asuntos resueltos</div></div>
+          <div class="stat"><div class="n">95%</div><div>satisfacción de clientes</div></div>
+          <div class="stat"><div class="n">24/7</div><div>atención en urgencias</div></div>
+        </div>
+        <div class="card">
+          <h3>Nuestra metodología</h3>
+          <ol class="list">
+            <li><strong>Diagnóstico</strong> — entendemos tu contexto legal y de negocio.</li>
+            <li><strong>Estrategia</strong> — definimos rutas, riesgos y presupuesto.</li>
+            <li><strong>Ejecución</strong> — equipo líder + especialistas por materia.</li>
+            <li><strong>Seguimiento</strong> — reportes y mejoras continuas.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="subgrid">
+        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f" alt="Sala de juntas LexNova">
+        <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f" alt="Equipo trabajando">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab" alt="Oficina moderna">
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/521234567890" target="_blank" class="whatsapp-float" title="Contáctanos por WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+</body>
+</html>
+
